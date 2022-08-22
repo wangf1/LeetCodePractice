@@ -6,6 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 class LCTestUtils {
+
+
+    static ListNode buildNodeList(int[] values) {
+        ListNode head = null;
+        for (int i = values.length - 1; i >= 0; i--) {
+            head = new ListNode(values[i], head);
+        }
+        return head;
+    }
+
     static void verifyNodeList(List<Integer> expectedValues, ListNode merged) {
         if (merged == null) {
             Assertions.assertNull(expectedValues);
@@ -18,4 +28,6 @@ class LCTestUtils {
         }
         Assertions.assertEquals(expectedValues, actualValues);
     }
+
+
 }
