@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static leetcodepractice.LCTestUtils.buildNodeList;
+import static leetcodepractice.LCListTestUtils.buildNodeList;
 
 class LC876Test {
 

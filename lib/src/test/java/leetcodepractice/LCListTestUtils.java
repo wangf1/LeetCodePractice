@@ -1,11 +1,12 @@
 package leetcodepractice;
 
+import com.google.common.primitives.Ints;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class LCTestUtils {
+class LCListTestUtils {
 
 
     static ListNode buildNodeList(int[] values) {
@@ -16,15 +17,20 @@ class LCTestUtils {
         return head;
     }
 
-    static void verifyNodeList(List<Integer> expectedValues, ListNode merged) {
-        if (merged == null) {
+    static ListNode buildNodeList(List<Integer> values) {
+        int[] intArray = Ints.toArray(values);
+        return buildNodeList(intArray);
+    }
+
+    static void verifyNodeList(List<Integer> expectedValues, ListNode head) {
+        if (head == null) {
             Assertions.assertNull(expectedValues);
             return;
         }
         List<Integer> actualValues = new ArrayList<>();
-        while (merged != null) {
-            actualValues.add(merged.val);
-            merged = merged.next;
+        while (head != null) {
+            actualValues.add(head.val);
+            head = head.next;
         }
         Assertions.assertEquals(expectedValues, actualValues);
     }

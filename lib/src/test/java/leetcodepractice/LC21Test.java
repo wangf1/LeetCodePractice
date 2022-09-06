@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static leetcodepractice.LCTestUtils.buildNodeList;
-import static leetcodepractice.LCTestUtils.verifyNodeList;
+import static leetcodepractice.LCListTestUtils.buildNodeList;
+import static leetcodepractice.LCListTestUtils.verifyNodeList;
 
 class LC21Test {
 
