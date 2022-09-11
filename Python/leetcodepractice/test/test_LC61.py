@@ -1,8 +1,8 @@
 import unittest
 from unittest import TestCase
 
-from Python.leetcodepractice.LC61 import LC61
-from Python.leetcodepractice.test.LCListTestUtils import build_node_list, verify_node_list
+from leetcodepractice.LC61 import LC61
+from leetcodepractice.test.LCListTestUtils import build_node_list, verify_node_list
 
 
 class TestLC61(TestCase):

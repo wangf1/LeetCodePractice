@@ -1,6 +1,7 @@
 import collections
 
 
+# https://leetcode.com/problems/longest-palindrome/
 class LC409:
     def longestPalindrome(self, s: str) -> int:
         palindrome_length = 0
