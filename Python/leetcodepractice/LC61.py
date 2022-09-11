@@ -1,6 +1,6 @@
 from typing import Optional
 
-from leetcodepractice.ListNode import ListNode
+from Python.leetcodepractice.ListNode import ListNode
 
 
 class LC61:

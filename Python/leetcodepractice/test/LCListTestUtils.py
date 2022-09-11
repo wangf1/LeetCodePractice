@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from leetcodepractice.ListNode import ListNode
+from Python.leetcodepractice.ListNode import ListNode
 
 
 def build_node_list(ints: list) -> ListNode:
