@@ -5,6 +5,7 @@ from typing import Optional
 from leetcodepractice.data_structure_elements import TreeNode
 
 
+# Preorder Traversal + find proper min and max boundaries
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         return self._is_valid_bst(root, -math.inf, math.inf)
