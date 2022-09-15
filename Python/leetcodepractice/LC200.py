@@ -44,6 +44,6 @@ if __name__ == '__main__':
         ["0", "0", "1", "0", "0"],
         ["0", "0", "0", "1", "1"]
     ]
-    islands = Solution().numIslands(grid)
-    if islands != 3:
-        raise VerifyError(f"Should have 3 islands but has {0}", islands)
+    result = Solution().numIslands(grid)
+    if result != 3:
+        raise VerifyError(f"Should have 3 islands but has {0}", result)
