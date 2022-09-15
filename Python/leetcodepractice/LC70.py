@@ -3,11 +3,17 @@ from leetcodepractice.VerifyError import VerifyError
 
 
 # c(1) -> 1
-# c(2) -> 2 (1, 2)
-# c(3) -> 3 (111, 12, 21)
-# c(4) -> 5 (1111, 211, 121, 112, 22)
-# c(5) -> 8 (11111, 2111, 1211, 1121, 1112, 221, 212, 122)
-# I can guess that c(n) = c(n-2) + c(n-1), it is very similar to Fibonacci Number.
+
+# c(2) -> 2 (11, 2)
+
+# c(3) -> 3 (111, 12, 21). Explanation: if take 1 step, has 2 ways: (111, 12); if take 2 steps, has 1 way: (21)
+
+
+# c(4) -> 5 (1111, 112, 121, 211, 22). Explanation: if take 1 step, has 3 ways: (1111, 112, 121); if take 2 steps,
+# has 1 way: (211, 22)
+
+
+# I can see that c(n) = c(n-2) + c(n-1), I find out the sub-problem of dynamic programming
 class Solution:
     def climbStairs(self, n: int) -> int:
         if n in [1, 2]:
@@ -24,4 +30,4 @@ class Solution:
 if __name__ == '__main__':
     result = Solution().climbStairs(7)
     if result != 21:
-        raise VerifyError(f'ways of 7 steps should be 21, but {0}', result)
+        raise VerifyError(f'ways of 7 steps should be 21, but {result}')
