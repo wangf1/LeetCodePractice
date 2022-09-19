@@ -5,3 +5,4 @@ Need review:
 3. LC200
 4. LC746 How to find the sub-problem of DP
 5. LC424
+6. LC394 Stack approach is better than recursive
