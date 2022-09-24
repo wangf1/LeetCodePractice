@@ -6,3 +6,4 @@ Need review:
 4. LC746 How to find the sub-problem of DP
 5. LC424
 6. LC394 Stack approach is better than recursive
+7. LC43 mathematical approach how to calculate multiply
