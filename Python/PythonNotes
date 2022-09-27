@@ -1,0 +1,7 @@
+1. Sort
+See LC148
+nodes.sort(key=attrgetter('val'))
+nodes = sorted(nodes, key=lambda x: x.val) #return value is sorted, but nodes in parameter is not sorted
+
+2. Generator / yield key word
+See LC844

@@ -3,6 +3,9 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def __str__(self):
+        return f"{self.val}--next-->{self.next.val if self.next else None}"
+
 
 class Node:
     def __init__(self, val=None, children=None):

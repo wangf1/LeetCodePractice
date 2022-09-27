@@ -19,4 +19,5 @@ def verify_node_list(expected_values: list, head: ListNode):
     while head is not None:
         actual_values.append(head.val)
         head = head.next
+    print(actual_values)
     assertions.assertEquals(expected_values, actual_values)
