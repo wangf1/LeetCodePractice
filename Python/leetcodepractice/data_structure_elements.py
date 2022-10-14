@@ -1,3 +1,6 @@
+import collections
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -18,3 +21,29 @@ class TreeNode:
         self.val = val
         self.left: TreeNode = left
         self.right: TreeNode = right
+
+    def __repr__(self) -> str:
+        result = []
+
+        def bfs():
+            if not self:
+                return ""
+            que = collections.deque([self])
+            while que:
+                for _ in range(len(que)):
+                    node: TreeNode = que.popleft()
+                    result.append(node.val)
+                    if not node.left and not node.right:
+                        continue
+                    if node.left:
+                        que.append(node.left)
+                    else:
+                        result.append(None)
+                    if node.right:
+                        que.append(node.right)
+                    else:
+                        result.append(None)
+
+        bfs()
+        string = ','.join(str(x) for x in result)
+        return '[' + string + ']'
