@@ -11,8 +11,15 @@ class ListNode:
 
 
 class Node:
-    def __init__(self, val=None, children=None):
+    """
+    A node structure that can be used for several LeetCode problems.
+    """
+
+    def __init__(self, val=None, children=None, *, left=None, right=None, next=None):
         self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
         self.children = children
 
 
