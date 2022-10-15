@@ -6,22 +6,16 @@ from leetcodepractice.data_structure_elements import TreeNode
 
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
-        length = len(inorder)
-        if length == 0:
+        if not inorder:
             return None
-        root_val = postorder[-1]
-        root = TreeNode(root_val)
-
+        root_val = postorder.pop()
         root_index = inorder.index(root_val)
-        inorder_left = inorder[0: root_index]
-        inorder_right = inorder[root_index + 1: length]
-        postorder_right = postorder[-len(inorder_right) - 1: -1]
-        postorder_left = postorder[-len(inorder_left) - len(inorder_right) - 1: -len(inorder_right) - 1]
 
-        left = self.buildTree(inorder_left, postorder_left)
-        right = self.buildTree(inorder_right, postorder_right)
+        lefts = inorder[: root_index]
+        rights = inorder[root_index + 1:]
 
-        root.left = left
-        root.right = right
+        root = TreeNode(root_val)
+        root.right = self.buildTree(rights, postorder)
+        root.left = self.buildTree(lefts, postorder)
 
         return root
