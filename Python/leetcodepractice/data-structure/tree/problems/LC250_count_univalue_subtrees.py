@@ -31,6 +31,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    root = build_binary_tree([5, 1, 5, 5, 5, None, 5])
+    root = build_binary_tree([5, 1, 5, 5, 5, None, 5], TreeNode())
     result = Solution().countUnivalSubtrees(root)
     assert result == 4, f"Wrong result {result}!"

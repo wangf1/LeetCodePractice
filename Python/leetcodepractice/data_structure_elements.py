@@ -22,6 +22,9 @@ class Node:
         self.next = next
         self.children = children
 
+    def __repr__(self) -> str:
+        return build_bfs_string(self)
+
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -30,27 +33,31 @@ class TreeNode:
         self.right: TreeNode = right
 
     def __repr__(self) -> str:
-        result = []
+        return build_bfs_string(self)
 
-        def bfs():
-            if not self:
-                return ""
-            que = collections.deque([self])
-            while que:
-                for _ in range(len(que)):
-                    node: TreeNode = que.popleft()
-                    result.append(node.val)
-                    if not node.left and not node.right:
-                        continue
-                    if node.left:
-                        que.append(node.left)
-                    else:
-                        result.append(None)
-                    if node.right:
-                        que.append(node.right)
-                    else:
-                        result.append(None)
 
-        bfs()
-        string = ','.join(str(x) for x in result)
-        return '[' + string + ']'
+def build_bfs_string(root) -> str:
+    result = []
+
+    def bfs():
+        if not root:
+            return ""
+        que = collections.deque([root])
+        while que:
+            for _ in range(len(que)):
+                node = que.popleft()
+                result.append(node.val)
+                if not node.left and not node.right:
+                    continue
+                if node.left:
+                    que.append(node.left)
+                else:
+                    result.append(None)
+                if node.right:
+                    que.append(node.right)
+                else:
+                    result.append(None)
+
+    bfs()
+    string = ','.join(str(x) for x in result)
+    return '[' + string + ']'
