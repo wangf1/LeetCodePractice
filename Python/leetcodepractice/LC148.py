@@ -3,7 +3,7 @@ from operator import attrgetter
 from typing import Optional
 
 from leetcodepractice.data_structure_elements import ListNode
-from leetcodepractice.test.LCListTestUtils import build_node_list, verify_node_list
+from leetcodepractice.test.LCTestUtils import build_node_list, verify_node_list
 
 
 class Solution:

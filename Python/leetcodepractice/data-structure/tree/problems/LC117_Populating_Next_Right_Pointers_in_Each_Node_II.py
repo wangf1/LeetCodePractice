@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 import LC116_populating_next_right_pointers_in_each_node
 from leetcodepractice.data_structure_elements import Node
-from leetcodepractice.test.LCListTestUtils import build_binary_tree
+from leetcodepractice.test.LCTestUtils import build_binary_tree
 
 
 class Solution:

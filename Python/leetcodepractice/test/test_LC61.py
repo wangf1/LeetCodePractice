@@ -2,7 +2,7 @@ import unittest
 from unittest import TestCase
 
 from leetcodepractice.LC61 import LC61
-from leetcodepractice.test.LCListTestUtils import build_node_list, verify_node_list
+from leetcodepractice.test.LCTestUtils import build_node_list, verify_node_list
 
 
 class TestLC61(TestCase):

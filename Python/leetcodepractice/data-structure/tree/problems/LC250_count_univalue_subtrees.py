@@ -2,7 +2,7 @@
 from typing import Optional
 
 from leetcodepractice.data_structure_elements import TreeNode
-from leetcodepractice.test.LCListTestUtils import build_binary_tree
+from leetcodepractice.test.LCTestUtils import build_binary_tree
 
 
 class Solution:
