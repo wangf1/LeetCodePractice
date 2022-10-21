@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+
 import collections
 
 from leetcodepractice.data_structure_elements import TreeNode
@@ -56,7 +58,7 @@ class Codec:
         dfs_preorder(root)
         string = ' '.join(vals)
         return string
- 
+
     def deserialize(self, data):
         def dfs_preorder():
             val = next(vals)
