@@ -40,23 +40,19 @@ def build_bfs_string(root) -> str:
     result = []
 
     def bfs():
-        if not root:
-            return ""
         que = collections.deque([root])
         while que:
             for _ in range(len(que)):
                 node = que.popleft()
-                result.append(node.val)
-                if not node.left and not node.right:
-                    continue
-                if node.left:
+                if node:
+                    result.append(node.val)
                     que.append(node.left)
-                else:
-                    result.append(None)
-                if node.right:
                     que.append(node.right)
                 else:
                     result.append(None)
+        while not result[-1]:
+            result.pop()
+        return ",".join(str(i) for i in result)
 
     bfs()
     string = ','.join(str(x) for x in result)
