@@ -15,3 +15,5 @@ Need review:
 13. 112. Path Sum ------ In the iterative solution, the stack element is a tuple that contains both node and parent value.
 14. LC236_Lowest_Common_Ancestor_of_a_Binary_Tree.py ----- Find the recursion structure
 15. LC752_Open_the_Lock.py ------ Figure out structured way to attempt the lock
+16. LC279_Perfect_Squares.py ----- find the virtual tree, and use BFS to solve the issue
+17. LC155_Min_Stack.py ----- Space for time
