@@ -17,3 +17,4 @@ Need review:
 15. LC752_Open_the_Lock.py ------ Figure out structured way to attempt the lock
 16. LC279_Perfect_Squares.py ----- find the virtual tree, and use BFS to solve the issue
 17. LC155_Min_Stack.py ----- Space for time
+18. LC739_Daily_Temperatures.py ------- Monotonic Stack: Keep the stack Monotonically increasing/decreasing
