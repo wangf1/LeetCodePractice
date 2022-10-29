@@ -15,12 +15,13 @@ class Node:
     A node structure that can be used for several LeetCode problems.
     """
 
-    def __init__(self, val=None, children=None, *, left=None, right=None, next=None):
+    def __init__(self, val=None, children=None, *, left=None, right=None, next=None, neighbors=None):
         self.val = val
         self.left = left
         self.right = right
         self.next = next
         self.children = children
+        self.neighbors = neighbors if neighbors is not None else []
 
     def __repr__(self) -> str:
         return build_bfs_string(self)
