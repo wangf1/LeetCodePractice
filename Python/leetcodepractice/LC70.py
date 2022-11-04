@@ -26,6 +26,20 @@ class Solution:
             previous = old_current
         return current
 
+    # Recursive + memoization approach
+    def climbStairs_2(self, n: int) -> int:
+        memo = [0] * (n + 1)
+        memo[0] = 1
+        memo[1] = 1
+
+        def recur(n: int) -> int:
+            if memo[n]:
+                return memo[n]
+            memo[n] = recur(n - 2) + recur(n - 1)
+            return memo[n]
+
+        return recur(n)
+
 
 if __name__ == '__main__':
     result = Solution().climbStairs(7)
