@@ -19,3 +19,4 @@ Need review:
 17. LC155_Min_Stack.py ----- Space for time
 18. LC739_Daily_Temperatures.py ------- Monotonic Stack: Keep the stack Monotonically increasing/decreasing
 19. LC494_Target_Sum.py ------- Use memo
+20. LC21_Merge_Two_Sorted_Lists.py --- find the recursion structure
