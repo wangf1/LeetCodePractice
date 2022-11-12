@@ -21,3 +21,6 @@ Need review:
 19. LC494_Target_Sum.py ------- Use memo
 20. LC21_Merge_Two_Sorted_Lists.py --- find the recursion structure
 21. LC95_Unique_Binary_Search_Trees_II.py -- --- find the recursion structure
+22. LC52_N-Queens_II.py ------- backtracking
+23. LC489_Robot_Room_Cleaner.py ----- backtracking
+24. LC37_Sudoku_Solver.py ----- backtracking template
