@@ -25,3 +25,5 @@ Need review:
 23. LC489_Robot_Room_Cleaner.py ----- backtracking
 24. LC37_Sudoku_Solver.py ----- backtracking template
 25. LC77_Combinations.py ------ backtracking approach
+26. LC22_Generate_Parentheses.py --------- backtracking
+27. LC26_Remove_Duplicates_from_Sorted_Array.py --- Find the correct two pointer paradigm
