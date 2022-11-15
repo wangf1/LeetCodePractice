@@ -27,3 +27,4 @@ Need review:
 25. LC77_Combinations.py ------ backtracking approach
 26. LC22_Generate_Parentheses.py --------- backtracking
 27. LC26_Remove_Duplicates_from_Sorted_Array.py --- Find the correct two pointer paradigm
+28. LC136_Single_Number.py ------bit operation
