@@ -1,7 +1,7 @@
 import unittest
 from unittest import TestCase
 
-from leetcodepractice.LC61 import LC61
+from leetcodepractice.study_plan_leetcode75.LC61 import LC61
 from leetcodepractice.test.LCTestUtils import build_node_list, verify_node_list
 
 
