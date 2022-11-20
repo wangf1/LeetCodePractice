@@ -30,3 +30,5 @@ Need review:
 28. LC136_Single_Number.py ------bit operation
 29. LC48_Rotate_Image.py ------  transpose matrix and reflect matrix
 30. LC108_Convert_Sorted_Array_to_Binary_Search_Tree.py -------- boundary condition should be aware
+31. LC88_Merge_Sorted_Array.py --------- from end to beginning is a good idea
+32. LC53_Maximum_Subarray.py  ------- Did not find solution
