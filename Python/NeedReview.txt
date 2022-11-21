@@ -33,3 +33,4 @@ Need review:
 31. LC88_Merge_Sorted_Array.py --------- from end to beginning is a good idea
 32. LC53_Maximum_Subarray.py  ------- Did not find solution
 33. LC198_House_Robber.py ------ recursion can call previous TWO execution
+34. LC204_Count_Primes.py ----- Sieve of Eratosthenes approach for list primes
