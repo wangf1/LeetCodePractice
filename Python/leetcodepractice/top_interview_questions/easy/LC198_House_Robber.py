@@ -20,6 +20,7 @@ class Solution:
 
         return max(dp(len(nums) - 1))
 
+    # Do not forget recursion not only can call previous one, but also can call previous two execution
     def rob(self, nums: List[int]) -> int:
         if len(nums) <= 2:
             return max(nums)
@@ -29,6 +30,7 @@ class Solution:
         def dp(end: int) -> int:
             if end < len(memo):
                 return memo[end]
+            # Call previous TWO execution
             result = max(dp(end - 1), dp(end - 2) + nums[end])
             memo.append(result)
             return result
