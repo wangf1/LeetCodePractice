@@ -34,3 +34,6 @@ Need review:
 32. LC53_Maximum_Subarray.py  ------- Did not find solution
 33. LC198_House_Robber.py ------ recursion can call previous TWO execution
 34. LC204_Count_Primes.py ----- Sieve of Eratosthenes approach for list primes
+35. https://leetcode.com/problems/3sum ----- Consider use set
+36. https://leetcode.com/problems/longest-palindromic-substring   -------  DP
+37. https://leetcode.com/problems/increasing-triplet-subsequence ---------- The very greedy solution
