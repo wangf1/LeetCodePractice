@@ -1,5 +1,7 @@
 package leetcodepractice;
 
+import leetcodepractice.datastructure.ListNode;
+
 import java.util.HashMap;
 import java.util.Map;
 

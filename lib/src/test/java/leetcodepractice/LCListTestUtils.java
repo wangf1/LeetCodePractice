@@ -1,6 +1,7 @@
 package leetcodepractice;
 
 import com.google.common.primitives.Ints;
+import leetcodepractice.datastructure.ListNode;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;

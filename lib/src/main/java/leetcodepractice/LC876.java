@@ -1,5 +1,7 @@
 package leetcodepractice;
 
+import leetcodepractice.datastructure.ListNode;
+
 // https://leetcode.com/problems/middle-of-the-linked-list/
 public class LC876 {
     public ListNode middleNode(ListNode head) {

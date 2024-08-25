@@ -1,5 +1,7 @@
 package leetcodepractice;
 
+import leetcodepractice.datastructure.ListNode;
+
 // https://leetcode.com/problems/merge-two-sorted-lists/
 public class LC21 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

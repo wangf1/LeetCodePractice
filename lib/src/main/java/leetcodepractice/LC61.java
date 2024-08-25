@@ -1,5 +1,7 @@
 package leetcodepractice;
 
+import leetcodepractice.datastructure.ListNode;
+
 // https://leetcode.com/problems/rotate-list/
 // Advance version: https://www.algoexpert.io/questions/shift-linked-list
 public class LC61 {

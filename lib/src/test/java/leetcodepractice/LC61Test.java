@@ -1,5 +1,6 @@
 package leetcodepractice;
 
+import leetcodepractice.datastructure.ListNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

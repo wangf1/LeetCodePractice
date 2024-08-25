@@ -3,7 +3,7 @@ package leetcodepractice;
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+public class LC36 {
 
     public static final int SUDOKU_LENGTH = 9;
 
